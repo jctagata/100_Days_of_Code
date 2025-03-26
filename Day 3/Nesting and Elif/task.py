@@ -1,7 +1,14 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+# Get Math Grade
 
-if height >= 120:
-    print("You can ride the rollercoaster")
+math_grade = int(input("What was your grade in Math?: "))
+eng_grade = int(input("What was your grade in English?: "))
+
+if math_grade >= 90:
+    if eng_grade >= 90:
+        print(f"Woah, you're good at both Math and English!")
+    else:
+        print(f"You're good at Math!")
+elif eng_grade >= 90:
+    print(f"You're good at English!")
 else:
-    print("Sorry you have to grow taller before you can ride.")
+    print("Hey, it doesn't matter. Study harder!")
